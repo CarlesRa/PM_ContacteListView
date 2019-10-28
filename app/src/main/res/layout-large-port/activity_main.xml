@@ -7,8 +7,8 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="478dp"
-        android:layout_height="798dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,12 +19,14 @@
             android:id="@+id/frgListado"
             android:name="com.carlesramos.pm_contacteslistview.fragments.FragmentListado"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
         <fragment
-            android:id="@+id/frgListado"
+            android:id="@+id/frgDetalle"
             android:name="com.carlesramos.pm_contacteslistview.fragments.FragmentDetalle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
